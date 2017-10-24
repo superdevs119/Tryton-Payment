@@ -1,0 +1,15 @@
+<data>
+    <xpath
+      expr="/form/notebook/page[@id='invoice']/group[@id='taxes_amount_state_buttons']/group[@id='amount_state_buttons']/group[@id='buttons']"
+      position="replace_attributes"
+    >
+        <group col="6" colspan="4" id="buttons">
+        </group>
+    </xpath>
+    <xpath
+      expr="/form/notebook/page[@id='invoice']/group[@id='taxes_amount_state_buttons']/group[@id='amount_state_buttons']/group[@id='buttons']/button[@name='pay']"
+      position="after"
+    >
+        <button name="pay_using_payment_transaction" string="_Pay using Gateway" icon="tryton-go-next"/>
+    </xpath>
+</data>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<form string="Failed" col="2">
+    <field name="message" colspan="2"/>
+</form>

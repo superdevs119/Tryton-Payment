@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        <record model="ir.action.wizard" id="wizard_pay_using_transaction">
+            <field name="name">Pay using Payment Transaction</field>
+            <field name="wiz_name">account.invoice.pay_using_transaction</field>
+            <field name="model">account.invoice</field>
+        </record>
+        <record model="ir.ui.view" id="pay_using_transaction_start_view_form">
+            <field name="model">account.invoice.pay_using_transaction.start</field>
+            <field name="type">form</field>
+            <field name="name">pay_using_transaction_start_form</field>
+        </record>
+        <record model="ir.ui.view" id="pay_using_transaction_failed_view_form">
+            <field name="model">account.invoice.pay_using_transaction.failed</field>
+            <field name="type">form</field>
+            <field name="name">pay_using_transaction_failed_form</field>
+        </record>
+        <record model="ir.ui.view" id="invoice_view_form">
+            <field name="model">account.invoice</field>
+            <field name="inherit" ref="account_invoice.invoice_view_form" />
+            <field name="name">invoice_form</field>
+        </record>
+    </data>
+</tryton>

@@ -1,0 +1,50 @@
+<form string="Pay using Payment Transaction" col="4">
+    <group id="charge" colspan="4">
+        <field name="company" colspan="4" invisible="1"/>
+        <newline />
+        <field name="invoice" invisible="1" colspan="4" />
+        <newline />
+        <label name="gateway"/>
+        <field name="gateway" widget="selection" colspan="3"/>
+        <newline />
+        <label name="credit_account"/>
+        <field name="credit_account" colspan="3"/>
+        <newline />
+        <label name="amount"/>
+        <field name="amount"/>
+        <label name="use_existing_card"/>
+        <field name="use_existing_card"/>
+        <label name="reference"/>
+        <field name="reference"/>
+        <separator name="payment_profile" colspan="4"/>
+        <label name="payment_profile"/>
+        <field name="payment_profile" widget="selection"/>
+        <separator name="swipe_data" string="Add Payment Profile" colspan="4"/>
+            <label name="swipe_data"/>
+            <field name="swipe_data" widget="password"/>
+        <separator name="owner" string="Card Information" colspan="4"/>
+            <label name="owner"/>
+            <field name="owner"/>
+            <newline />
+            <label name="number"/>
+            <field name="number"/>
+            <group colspan="3" col="6" id="card_data">
+                <label name="expiry_month"/>
+                <field name="expiry_month"/>
+                <label name="expiry_year"/>
+                <field name="expiry_year"/>
+                <label name="csc"/>
+                <field name="csc"/>
+            </group>
+    </group>
+    <group id="refund" colspan="4">
+        <label name="gateway"/>
+        <field name="gateway" widget="selection"/>
+        <label name="credit_account"/>
+        <field name="credit_account"/>
+        <label name="transaction"/>
+        <field name="transaction"/>
+        <label name="amount"/>
+        <field name="amount"/>
+    </group>
+</form>
